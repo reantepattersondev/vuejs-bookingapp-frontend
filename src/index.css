@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+ul.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pagination .pagination-item {
+    color: black;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination-link {
+    width: 40px;
+    height: 40px;
+}
+
+.pagination .pagination-item.pagination-item--active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination .pagination-item.pagination-item--disable {
+    color: gray;
+}
+
+.pagination .pagination-item:hover:not(.pagination-item--active,
+.pagination-item--disable) {
+    background-color: #ddd;
+}
+
+.datetimepicker:not(.visible) {
+    display: none !important;
+}
